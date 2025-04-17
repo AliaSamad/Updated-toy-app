@@ -4,9 +4,10 @@ Rails.application.routes.draw do
 
   get "home/index"
   get "home/about"
-  get "home/contactus"
   get "home/help"
-  
+
+  get '/contactus', to: 'home#contactus', as: 'contactus'
+
   resources :microposts do
     member do
       get :like
@@ -14,7 +15,5 @@ Rails.application.routes.draw do
   end
 
   resources :users
-
-  #get 'microposts/:id/like' => 'microposts#like', as: :likeAPost
-  
 end
+

@@ -4,6 +4,7 @@
     <title><%= content_for(:title) || "Toy App" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -37,7 +38,7 @@
               <a class="nav-link" href="<%= home_help_url %>"><i class="bi bi-person-raised-hand"></i> Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<%= home_contactus_url %>"><i class="bi bi-person-rolodex"></i> Contact Us</a>
+              <a class="nav-link" href="<%= contactus_path %>"><i class="bi bi-person-rolodex"></i> Contact Us</a>
             </li>
             
           </ul>
@@ -47,6 +48,6 @@
     <div class="container-fluid">
       <%= yield %>
     </div>
-    
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </body>
 </html>

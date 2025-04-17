@@ -333,7 +333,7 @@ PLATFORMS
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
-  arm64-darwin
+  arm64-darwin-24
   x86_64-darwin-23
   x86_64-linux-gnu
   x86_64-linux-musl
@@ -348,6 +348,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   pg
+  popper_js (~> 2.11)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
   rubocop-rails-omakase

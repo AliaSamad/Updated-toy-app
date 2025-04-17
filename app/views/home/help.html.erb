@@ -1,2 +1,45 @@
-<h1>Home#help</h1>
-<p>Find me in app/views/home/help.html.erb</p>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4">Help & Support</h1>
+          <p class="text-center">Find answers to common questions or reach out directly:</p>
+          <hr>
+          <div class="accordion" id="helpAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  How do I create an account?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                <div class="accordion-body">
+                  Click on "Sign Up" at the top right corner and fill out the form to create your account.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  How can I reset my password?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                <div class="accordion-body">
+                  Visit the login page and click on "Forgot Password" to reset your password.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <a href="<%= contactus_path %>" class="btn btn-primary">Still Need Help? Contact Us</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

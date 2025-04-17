@@ -1,2 +1,41 @@
-<h1>Home#contactus</h1>
-<p>Find me in app/views/home/contactus.html.erb</p>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4">Contact Us</h1>
+          <p class="text-center">We'd love to hear from you! Reach out through any of the methods below:</p>
+          <hr>
+
+          <!-- Contact Info List -->
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">
+                  📧 <strong>Email:</strong> <a href="mailto:contactus@toyapp.com">contactus@toyapp.com</a>
+                </li>
+                <li class="list-group-item text-center">
+                  📞 <strong>Phone:</strong> (123) 456-7890
+                </li>
+                <li class="list-group-item text-center">
+                  📍 <strong>Address:</strong> 123 Main Street, New York, USA
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Properly aligned button -->
+          <div class="row justify-content-center mt-4">
+            <div class="col-auto">
+              <a href="<%= root_path %>" class="btn btn-primary btn-lg">Back to Home</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
